@@ -12,8 +12,21 @@ import { ReasoningText } from "@/components/agents/loading-states/reasoning-text
 import { PromptInput } from "@/components/agents/prompt-input";
 
 const MODELS = [
-  { value: "openai/gpt-oss-120b", label: "openai/gpt-oss-120b" },
-  { value: "openai/gpt-oss-20b", label: "openai/gpt-oss-20b" },
+  { value: "groq/openai/gpt-oss-120b", label: "groq/openai/gpt-oss-120b" },
+  { value: "groq/openai/gpt-oss-20b", label: "groq/openai/gpt-oss-20b" },
+  { value: "gemini/gemini-2.5-flash", label: "gemini/gemini-2.5-flash" },
+  {
+    value: "cohere/command-a-reasoning-08-2025",
+    label: "cohere/command-a-reasoning-08-2025",
+  },
+  {
+    value: "cohere/command-a-vision-07-2025",
+    label: "cohere/command-a-vision-07-2025",
+  },
+  {
+    value: "cohere/command-a-03-2025",
+    label: "cohere/command-a-03-2025",
+  },
 ];
 
 interface ChatMessage {
@@ -48,7 +61,7 @@ export default function Home() {
     <main className="flex min-h-dvh min-w-dvw items-center justify-center p-6">
       <div className="flex w-full max-w-md flex-col gap-4">
         <h1 className="text-xl font-semibold text-center bg-neutral-800 py-4 rounded-xl">
-          Free LLM Models Integration | Tutorial
+          Multiple Free AI Models with Omniroute
         </h1>
 
         <MessageGroup spacing="default" className="min-h-40">

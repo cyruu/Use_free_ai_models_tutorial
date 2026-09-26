@@ -6,7 +6,7 @@ import OpenAI from "openai";
 
 const groq = new OpenAI({
   apiKey: process.env.GROQ_API_KEY,
-  baseURL: "https://api.groq.com/openai/v1",
+  baseURL: "http://localhost:20128/v1",
 });
 
 export async function POST(req: NextRequest) {
